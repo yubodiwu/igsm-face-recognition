@@ -1,0 +1,22 @@
+.comment {
+    background: $light-grey;
+    border: 1px solid $light-grey-border;
+    margin: 1rem;
+    padding: 0.5rem;
+
+    .comment-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    h4 {
+        word-break: break-all;
+    }
+}
+
+.comment-content {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="redditClone">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.js"></script>
+</head>
+
+<body>
+    <nav class="menu nav">
+        <li>Reddit Clone</li>
+    </nav>
+
+    <div class="column small-centered medium-10 large-9" ng-controller="PostsController">
+        <h4 ng-show="loading">Loading Posts...</h4>
+        <div ng-repeat="post in posts" class="column small-centered medium-10 large-9">
+            <div class="post">
+                <div class="title-image">
+                    <div>
+                        <h4>{{ post.data.author }}</h4>
+                        <img src="{{ post.imgSrc }}" alt="badimg">
+                    </div>
+                </div>
+                <div class="post-content">
+                    <h6>
+                        {{ post.title }}
+                    </h6>
+                    <p>
+                        Bacon ipsum dolor amet pork landjaeger fatback ham bacon ground round, biltong salami capicola chuck tail pork chop. Bresaola picanha corned beef, spare ribs chicken rump ribeye pork drumstick frankfurter cupim pork loin fatback. Prosciutto doner pork
+                        loin beef pig flank porchetta. Pancetta pork loin corned beef beef ribs short loin swine cow turkey bacon tongue capicola jowl pork chop. Salami swine meatloaf landjaeger. Leberkas biltong short ribs fatback beef.
+                    </p>
+                    <div class="post-action">
+                        <ul class="menu">
+                            <li>
+
+                            </li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="./bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

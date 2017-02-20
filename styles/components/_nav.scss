@@ -1,0 +1,16 @@
+.nav {
+    background: $light-grey;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+
+    div {
+        display: inline-block;
+        vertical-align: bottom;
+        font-size: 1.3rem;
+    }
+}
+
+#search {
+    padding-left: 2rem;
+}

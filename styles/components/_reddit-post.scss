@@ -1,0 +1,30 @@
+.post {
+    background: $light-grey;
+    border: 1px solid $light-grey-border;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+    padding: 0.5rem;
+
+    img {
+        display: block;
+        min-width: 12rem;
+    }
+
+    .title-image {
+        min-width: $title-width;
+        max-width: $title-width;
+        display: flex;
+        align-items: center;
+    }
+
+    h4 {
+        word-break: break-all;
+    }
+}
+
+.post-content {
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+}

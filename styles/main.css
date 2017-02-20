@@ -1,0 +1,54 @@
+.nav {
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  height: 3rem; }
+  .nav div {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.3rem; }
+
+#search {
+  padding-left: 2rem; }
+
+.post {
+  background: #fafafa;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem;
+  padding: 0.5rem; }
+  .post img {
+    display: block;
+    min-width: 12rem; }
+  .post .title-image {
+    min-width: 15rem;
+    max-width: 15rem;
+    display: flex;
+    align-items: center; }
+  .post h4 {
+    word-break: break-all; }
+
+.post-content {
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center; }
+
+.comment {
+  background: #fafafa;
+  border: 1px solid #eee;
+  margin: 1rem;
+  padding: 0.5rem; }
+  .comment .comment-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .comment h4 {
+    word-break: break-all; }
+
+.comment-content {
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center; }
+
+/*# sourceMappingURL=main.css.map */
